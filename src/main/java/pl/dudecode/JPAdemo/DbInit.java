@@ -4,8 +4,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
 
 @Service
@@ -18,7 +16,7 @@ public class DbInit implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         List<User> dummyUsers = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             User dummyUser = new User();
